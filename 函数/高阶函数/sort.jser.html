@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sort</title>
+</head>
+<body>
+<script type="text/javascript">
+//    array排序规则：转换成string类型，比较每个string类型ASCII值
+  var arr=[1,10,2,20];
+//    alert(arr.sort());  //输出1,10,2,20
+
+//    自定义排序规则 -1在前面，1在后面，0在原位置
+//    alert(arr.sort(function (x,y) {
+//        if(x<y){
+//            return -1;
+//        }
+//        if(x>y){
+//            return 1;
+//        }
+//
+//        return 0;
+//    }))
+
+//对象排序
+//    var foo= {
+//        name:'sun',
+//        age:22
+//    };
+//
+//    var foo1= {
+//        name:'qi',
+//        age:23
+//    }
+//
+//    var arrO=[foo,foo1];
+// alert(arrO.sort(function (x,y) {
+//     if(x.age>y.age){
+//         return 1;
+//     }
+//     if(x.age<y.age){
+//         return -1
+//     }
+//
+//     return 0;
+//
+// }))
+
+//    简易式
+//alert(arr.sort(function (x,y) {
+//    return x-y;
+//}))
+
+</script>
+</body>
+</html>

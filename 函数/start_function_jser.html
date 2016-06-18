@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>start-function</title>
+</head>
+<body>
+<script type="text/javascript">
+    //定义函数的第一种方式
+    //    function start_function(param) {
+    //        if (param) {
+    //            return true;
+    //        }
+    //        else {
+    //            return false;
+    //        }
+    //    }
+
+    //定义函数的第二种方式
+    //    var start_function = function (param) {
+    //        if (param) {
+    //            return true;
+    //        }
+    //        else {
+    //            return false;
+    //        }
+    //    }
+
+    //判断函数传入参数的个数
+    //    function judge() {
+    //        if (arguments.length === 2) {
+    //
+    //        }
+    //    }
+
+    //ES6 新标准 ...rest函数传入多个参数rest
+    //    rest代表着多个参数
+    //        function rest_function(a,b,...rest){
+    //            alert(a);
+    //            alert(b);
+    //            alert(rest[0].name);
+    //        }
+    //
+    //        rest_function(1,2,{'name':'sun'});
+    //    请用rest参数编写一个sum()函数，接收任意个参数并返回它们的和：
+
+    //for in遍历
+    //    function sum(...rest) {
+    //        var sum=0;
+    //        for(var item in rest){
+    //            sum+=rest[item];
+    //        }
+    //        alert(sum);
+    //        return sum;
+    //    }
+    // for of遍历
+    //    function sumByOf(...rest) {
+    //        var sum=0;
+    //        for(var item of rest){
+    //            sum+=item;
+    //        }
+    //
+    //        return sum;
+    //    }
+
+    //    sum(1,2,2,2,2);
+
+    //    定义一个计算圆面积的函数area_of_circle()，它有两个参数：
+    //    r: 表示圆的半径；
+    //    pi: 表示π的值，如果不传，则默认3.14
+    //    function area_of_circle(r,pi) {
+    //        var math=0;
+    //        if(arguments.length===1){
+    //            math=r*r*3.14;
+    //            return math;
+    //        }else{
+    //            math=pi*r*r;
+    //            return math;
+    //        }
+    //    }
+
+    //    Max是一个JavaScript新手，他写了一个max()函数，返回两个数中较大的那个：
+    //    function max(a, b) {
+    //        return a >= b ? a : b;
+    //    }
+
+</script>
+</body>
+</html>

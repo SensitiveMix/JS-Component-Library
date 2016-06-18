@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array</title>
+</head>
+<body>
+<script type="text/javascript">
+//    获取array的长度 length
+//    var array1=[1,2,3];
+//    alert(array1.length) //3
+
+// *slice 类似于string中的subString（）版本，作用是截取数组的一部分
+//    var arr=['a','b','c','d'];
+//    alert(typeof arr.slice(0,1))  //a  //object
+
+//    push 往数组末尾中添加一个元素  pop 往数组的末尾删除一个元素
+//    var arr=[];
+//    arr.push(1);
+//    alert(arr); //1
+//    arr.pop();
+//    alert(arr)
+
+//    unshift 往数组头部添加若干元素 shift 删除第一个元素
+//    var arr=[];
+//    arr.unshift('a',{name:'sun',age:22});
+//    alert(arr);
+//    arr.shift();
+//    alert(arr)
+
+//    sort 排序 在函数中可以自定义排序，默认是按字母的先后顺序来排序
+//    var arr=['b','A','cc'];
+//    alert(arr.sort())
+
+//    reverse 数组的反转
+//    var arr=['a','b'];
+//    alert(arr.reverse()); //b,a
+
+//    splice()方法是修改array的万能方法
+//    var arr=['qi','hi'];
+//    从索引0开始删除两个元素，再往后添加一个元素
+//    alert(arr.splice(0,2,'sun'));
+//    从索引0开始删除一个元素，不添加任何元素
+//    arr.splice(0,1);
+//    从索引0开始不删除任何元素，往后添加三个元素
+//    arr.splice(0,0,'jack','ao','nancy');
+//    alert(arr)
+
+//    concat将当前数组与另外一个数组连接起来,不影响原来的数组 形成一个新的数组
+//    var arr=['name'];
+//    var arrd=arr.concat(['sun']);
+//    alert(arrd);
+
+//    join 将现有的数组按指定方式连接起来，然后返回连接以后的字符串
+//    var arr=['a','b','c'];
+//    alert(arr.join('/'));
+
+//    多维数组 数组中嵌套数组
+//    var arr=[[1,2,3],[2222],'-'];
+//    alert(arr[2][0])
+//    practice
+//    var arr=[[1,2,3],[300,400,500],'-'];
+//    alert(arr[1][2]);
+
+//    last_check
+//    在新生欢迎会上，你已经拿到了新同学的名单，请排序后显示：欢迎XXX，XXX，XXX和XXX同学！：
+//    var arr=['小明','小红','大军','阿黄'];
+//    var arrBySort=arr.sort();
+//    arrBySort.forEach(function (i) {
+//        alert("欢迎"+i)
+//    })
+//    alert("欢迎"+arrBySort[0]+","+arrBySort[1]+","+arrBySort[2]+","+"和"+arrBySort[3]+"同学");
+//    alert(typeof arrBySort)
+
+//sort join slice混合使用
+//    var arrayBySlice=arrBySort.slice(0,arrBySort.length-1);
+//    var arrayByJoin=arrayBySlice.join(',');
+//    alert("欢迎"+arrayByJoin+"和"+arrBySort[arrBySort.length-1]+"同学");
+
+//简易版 slice
+//    alert("欢迎"+arrBySort.slice(0,arrBySort.length-1)+"和"+arrBySort[arrBySort.length-1]+"同学");
+
+//复杂版splice unshift pop join length 使用
+//    arrBySort.splice(0,0,arrBySort.slice(0,arrBySort.length-1));
+//    arrBySort.unshift(arrBySort.slice(arrBySort.length-1)) ;
+//    for(var i=0;i<4;i++){
+//        arrBySort.pop();
+//    }
+//    alert("欢迎"+arrBySort.slice(1).join(',')+"和"+arrBySort[0]+"同学");
+
+</script>
+
+
+</body>
+
+</html>

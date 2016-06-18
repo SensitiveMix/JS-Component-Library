@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>object</title>
+</head>
+<body>
+<script type="text/javascript">
+//    对象由若干键值对组成
+    var cat={
+        name:'小红',
+        age:23,
+        birth:new Date(),
+        weight:60
+}
+//删除对象属性
+    delete cat.weight;
+    alert(cat.weight);
+//判断对象是否存在
+    alert('name' in cat);
+//判断对象是否存在
+alert(cat.hasOwnProperty('birth'));
+    alert(cat.birth);
+    alert(cat['name']);
+</script>
+</body>
+</html>

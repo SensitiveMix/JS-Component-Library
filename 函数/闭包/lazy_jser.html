@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lazy</title>
+</head>
+<body>
+<script type="text/javascript">
+//    闭包
+//创建一个函数立即就执行 a(3)
+//alert((function (i) {
+//    return i*i;
+//})(3))
+
+//    闭包就是实现携带外部函数的变量
+    function pow(n) {
+        return function pow2(x) {
+            return Math.pow(x,n);
+        }
+    }
+
+    var powObj=pow(2);
+    alert(powObj(3));
+</script>
+</body>
+</html>

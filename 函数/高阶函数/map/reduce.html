@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>map/reduce</title>
+</head>
+<body>
+<script type="text/javascript">
+//   map callback
+//    function pow(x) {
+//        return x*x;
+//    }
+//
+//    var arr=[1,2,3,4,5];
+//    alert(arr.map(String));
+//    alert(arr.map(pow)[0]);
+
+//    reduce callback 接受两个参数
+//求积
+//    function pow(x,y) {
+//        return x*y;
+//    }
+//
+//    var arr=[1,2,3];
+//    alert(arr.reduce(pow))
+//    reduce进行数组的转换 没有用到map的思想
+//    function string2Int(s) {
+//        var arr=[];
+//        for(var item=0;item<=s.length-1;item++ ){
+//            arr.push(s.substring(item,item+1)*1);
+//        }
+//
+//        function pow(x,y){
+//            return x*10+y;
+//        }
+//
+//        alert(arr.reduce(pow))
+//        return arr.reduce(pow);
+//    }
+
+//第二种写法
+//map reduce的经典用法
+//function string2Int(s) {
+//    return s.split('').map(function (x) {
+//        return x*1;
+//    }).reduce(function (m,n) {
+//        return m*10+n;
+//    });
+//
+//
+//}
+
+//    string2Int('1234');
+
+//请把用户输入的不规范的英文名字，变为首字母大写，其他小写的规范名字。
+//    function normalize(arr) {
+//        var a= arr.map(function (x) {
+//            return x.toLowerCase();
+//        }).map(function (y) {
+//            return y.substring(0,1).toUpperCase()+y.substring(1).toLowerCase();
+//        })
+//
+//        alert(a);
+//    }
+//
+//    normalize(['SUN','QI']);
+</script>
+</body>
+</html>

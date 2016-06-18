@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>method</title>
+</head>
+<body>
+<script type="text/javascript">
+//    var foo=function () {
+//
+//    }
+//
+//    var objects={
+//        name:'sun',
+//        age:22,
+//        birth:function () {
+//            return new Date().getFullYear()-1990;
+//        }
+//    }
+//
+//    alert(objects.name);
+//    alert(objects.birth());//birth是一个方法
+
+//    this 关键字指向当前的对象，this.birth可以拿到当前对象的属性
+//    var foo={
+//        name:'jack',
+//        age:22,
+//        origin:1993,
+//        birth:age
+//    }
+//
+//    function age() {
+//        return new Date().getFullYear()-this.origin;
+//    }
+//
+//    alert(foo.birth());
+//
+//    age(); //return NaN this 关键字指向的对象是window全局对象
+
+//js设计大坑之this 指向当前的对象
+//    var foo={
+//        name:'nancy',
+//        age:22,
+//        origin:1993,
+//        birth:function () {
+//            var that=this;  //开始就捕获foo对象
+//            function getBirth() {
+//                return new Date().getFullYear()-that.origin; //在内部指定this会获取window全局对象
+//            }
+//
+//            return getBirth();
+//        }
+//    }
+//
+//    alert(foo.birth())
+
+//    改变this指针的指向 apply
+
+//    function age() {
+//        return 1;
+//    }
+//
+//    var foo={
+//        age:age
+//    }
+//    alert(foo.age());
+
+//apply接受两个参数，第一个是当前的对象，第二个是数组
+//alert(age.apply(foo,[]))
+
+//    alert(Math.max.apply(null,[1,2,3]));
+//    alert(Math.max.call(null,1,2,3));
+
+//    装饰器 中使用apply 改变函数内部的行为
+//    var count=0;
+//    var oldParseInt=parseInt;
+//
+//    window.parseInt=function () {
+//        count+=1;
+//        return oldParseInt.apply(null,arguments);
+//    }
+//
+//    parseInt('10');
+//    parseInt('20');
+//    parseInt('30');
+//
+//    alert(count);
+//    alert(parseInt('10'));
+
+</script>
+</body>
+</html>
