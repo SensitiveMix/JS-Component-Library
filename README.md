@@ -1,2 +1,2 @@
 # jsers
-try to pactice as a jser
+try to pactice as a new jser
