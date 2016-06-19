@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>generator</title>
+</head>
+<body>
+<script type="text/javascript">
+//generator可以在执行过程中返回多次，所有他更像记住状态的函数，可以用一个对象来保存状态
+//    操作异步回调
+//要生成一个自增的ID，可以编写一个next_id()函数：
+//原始写法，申明一个全局变量来记住执行次数的状态
+//    var count_id=0;
+//    function next_id() {
+//        count_id++;
+//        return count_id;
+//    }
+
+//可以通过yield来返回多次结果
+//function* demo(x) {
+//    yield x+1;
+//    yield x+2;
+//    yield x+3;
+//    return x;
+//}
+//
+//for(var i of demo(3)){
+//    alert(i);
+//}
+
+//返回多次然后比较值的大小
+//function* next_id() {
+//    var i=0;
+//
+//    for(var x=1;x<=100;x++){
+//        i++;
+//        yield i;
+//
+//    }
+//    return i;
+//}
+//
+//for (var i of next_id()){
+//    alert(i);
+//}
+
+
+
+
+//    alert(next_id(5))
+</script>
+</body>
+</html>
