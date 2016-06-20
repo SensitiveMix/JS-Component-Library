@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File_Upload</title>
+    <script type="text/javascript">
+        var fileInput = document.getElementById('file'),
+                info = document.getElementById('info'),
+                preview = document.getElementById('image-preview');
+        // 监听 type="file" 的change事件
+        fileInput.addEventListener('change', function () {
+            // 清除背景图片
+            preview.style.backgroundImage = '';
+            // 检查文件是否选择
+            if(!fileInput.value) {
+                info.innerHTML = '<span style="color:red;">没有选择图片</span>';
+                return false;
+            }
+
+            // 获取file引用
+            var file = fileInput.files[0];
+            console.log(file);
+            info.innerHTML =
+                    '文件: ' + file.name + '<br>'
+                    +   '大小: ' + file.size + '<br>'
+                    +   '修改: ' + file.lastModifiedDate;
+
+            // 判断图片格式
+            if(file.type!=='image/jpeg' && file.type !== 'image/png' && file.type !== 'image/gif') {
+                var p = document.createElement('p');
+                p.innerHTML = '<span style="color:red;">不是有效的图片文件！</span>';
+                info.appendChild(p);
+                return false;
+            }
+
+            // 展示图片
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                var data = e.target.result;// data:image/jpeg;base64,
+                preview.style.backgroundImage = 'url("'+data+'")';
+            }
+
+            // 以DataURL的形式读取文件
+            reader.readAsDataURL(file);
+        });
+
+    </script>
+</head>
+<body>
+
+<h3>图片预览</h3>
+<div id="image-preview"
+     style="border: 1px solid #ccc; width: 980px;margin:auto; height: 200px; background-size: contain; background-repeat: no-repeat; background-position: center center;">
+
+</div>
+<div id="info">
+
+</div>
+<div>
+    <input type="file" id="file" name="file" value=""/>
+</div>
+</body>
+</html>
